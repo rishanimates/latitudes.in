@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+	<meta charset="utf-8"/>
+	<title>latitudes : a desire to alter your life</title>
+	<link href="latitudes.ico" rel="shortcut icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+	<meta property="og:image" content="latitudes.png">
+	
+	<link rel="apple-touch-icon" href="latitudes_60.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="latitudes_76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="latitudes_120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="latitudes_152.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script type="text/javascript" src="instafeed.js"></script>	
+<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta content="" name="description"/>
+	<meta content="" name="author"/>
+	
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="latitudes, latitudes.in,Food and Adventure Ishanya - The Road Trip, Ladakh - The Road Trip">
+  <meta property="og:description" content="Road trip from Pune to all over the world, AirXylo">
+  <meta property="og:url" content="https://latitudes.in">
+  <meta property="og:site_name" content="latitudes">
+  <meta property="og:image" content="https://latitudes.in/latitudes_full.png">
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
+  <meta property="og:locale" content="en_US">
+
+  <link href="main.css" rel="stylesheet" type="text/css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900" rel="stylesheet" type="text/css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110676814-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110676814-1');
+var ml = { timelines: {}};
+</script>
+	
+<style>
+
+    
+  body {
+    font: 13px "Source Sans Pro", Arial, Helvetica, sans-serif;
+    background-color: #9ba5b5;
+    color: #fff;
+    text-align: center;
+  }
+  .moving-letters {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 200px;
+  }
+  
+.galaxy {
+	background-image:url(bg1.jpg);
+position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+</style>	
+	</head>
+<body>
+	 <header>
+<a class="logo-ladakh" title="LADAKH - The Road Trip" href="https://ladakh.latitudes.in"></a>
+<a class="logo-ishanya" title="ISHANYA" href="https://ishanya.latitudes.in"></a>	
+	<ul class="social-links">
+			<li><a href="#wa" onclick="viewProfile('wa');"><i class="fa fa-whatsapp" style="
+				background-color: #03b503;
+			"></i></a>
+			</li>
+			<li>
+				<a href="https://twitter.com/latitudess" target="_blank"><i class="fa fa-twitter"></i></a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/channel/UClONtqIh7FfBbKB8VB5H5Kw/featured?disable_polymer=1" target="_blank"><i class="fa fa-youtube-play"></i></a>
+			</li>
+			<li>
+				<a href="#fb" onclick="viewProfile('fb');"><i class="fa fa-facebook"></i></a>
+			</li>
+			<li>
+				<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Flatitudess%2F&width=450&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId=1738191343150054" width="150" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			</li>
+		</ul>
+	</header>
+	<section>
+		<div id="instafeed" class="moving-letters"></div>
+	</section>
+<style>
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+</style> 
+<script>
+$('.ml12').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+ml.timelines["ml12"] = anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: function(el, i) {
+      return 500 + 30 * i;
+    }
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: function(el, i) {
+      return 100 + 30 * i;
+    }
+  });
+</script> 
+</body>
+</html>
+

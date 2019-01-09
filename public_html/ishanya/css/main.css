@@ -1,0 +1,576 @@
+/*Author - Kedar Patil */
+
+/*** RESET ***/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*** Header ***/
+header {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 13;
+	top: 0px;
+}
+.bg-transparent {
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.2;
+}
+.social-links {
+	float: left;
+    height: calc(100% - 20px);
+    display: inline-block;
+    top: -50px;
+    position: relative;
+	padding: 10px;
+}
+.social-links li {
+	height: 30px;
+	width: 30px;
+	border-radius: 100px;
+	margin-right: 10px;
+	float: left;
+    display: inline-block;
+}
+.social-links li a{
+	height: 30px;
+    width: 30px;
+    display: block;
+}
+.social-links li .fa {
+	width: 30px;
+    height: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 30px;
+    text-align: center;
+	border-radius: 100px;
+	font-size: 20px;
+}
+.social-links li .fa:hover {
+	color: #fff;
+}
+.fa-facebook {
+	background-color: #3d5b99;	
+}
+.fa-twitter {
+	background-color: #32CCFE;	
+}
+.fa-youtube-play {
+	background-color: #C52F30;	
+}
+.logo {
+	float: right;
+    width: 130px;
+    background: #334b54 url(../images/ishanya.png) center center;
+    height: calc(100% - 20px);
+    display: inline-block;
+    top: -50px;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+/*** Footer ***/
+footer {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 13;
+	bottom: 0px;
+}
+.profile-links {
+	float: right;
+    height: calc(100% - 20px);
+    display: inline-block;
+    top: -50px;
+    position: relative;
+	padding: 5px 10px;
+}
+.profile-links li {
+	height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    margin-left: 10px;
+    display: inline-block;
+    float: left;
+}
+.profile-links li a{
+	height: 40px;
+    width: 40px;
+    display: block;
+}
+.profile-links li .pl {
+	width: 34px;
+    height: 34px;
+    border-radius: 100px;
+	display: block;
+    border: 3px solid #ccc;
+}
+
+.profile-links li .pl-rp {
+	background: url(../images/profile-rp.png) center center;
+}
+.profile-links li .pl-vg {
+	background: url(../images/profile-vg.png) center center;
+}
+.profile-links li .pl-ap {
+	background: url(../images/profile-ap.png) center center;
+}
+.profile-links li .pl-nh {
+	background: url(../images/profile-nh.png) center center;
+}
+
+.profile-links li .pl:hover {
+	border: 3px solid #fff;
+}
+
+/*** Google Map ***/
+.gmnoprint.gm-bundled-control {
+	bottom: 105px !important;
+}
+
+/*** section ***/
+section {
+    position: fixed;
+    z-index: 11;
+    padding: 0px;
+    margin: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: calc(100% - 100px);
+    width: 50%;
+    top: 50px;
+    max-width: 500px;
+    min-width: 320px;
+    display:none;
+}
+
+section .bg-transparent	{
+	opacity: 0.8;
+}
+#section-panel {
+	position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.image-panel {
+	margin: 0px auto;
+    text-align: center;
+    margin: 10px;
+}
+.image-profile {
+	height: 180px;
+    width: 180px;
+    background: #334b54 url(../images/ishanya_full.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100px;
+    display: inline-block;
+    border: 3px solid #fff;
+}
+
+.image-profile:hover {
+	border: 3px solid #000;
+	
+}
+.image-ishanya {
+	background-image: url(../images/ishanya_full.png);
+	background-position: 0 13px;
+}
+.image-rp {
+	background-image: url(../images/dp-rp.png);
+}
+.image-vg {
+	background-image: url(../images/dp-vg.png);
+}
+.image-ap {
+	background-image: url(../images/dp-ap.png);
+}
+.image-nh {
+	background-image: url(../images/dp-nh.png);
+}
+
+.intro-title {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.intro-title span {
+	margin-top: 10px;
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.intro-name{
+
+}
+p {
+	padding: 5%;
+    line-height: 150%;
+    color: #fff;
+    font-weight: 300;
+    text-align: justify;
+}
+section a {
+	display: block;
+    position: absolute;
+    top: 5px;
+    z-index: 200;
+    right: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+section a:hover {
+	text-decoration: none;
+}
+section a:before {
+	content: "\f100";
+	font: normal normal normal 14px/1 FontAwesome;
+	color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#siteIntro{
+    z-index: 12;
+    background: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#siteIntro a {
+    display: block;
+    position: absolute;
+    top: 55px;
+    z-index: 200;
+    right: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#siteIntro a:hover {
+    text-decoration: none;
+}
+
+#siteIntro a:before {
+    content: "\f00d";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #344b53;
+    font-size: 16px;
+    text-align: center;
+}
+
+#intro-text{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#intro-text div {
+    display: none;
+    position: absolute;
+    top: 45%;
+    font-size: 300%;
+    white-space: nowrap;
+    font-family: fantasy;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+#countdown{
+    display:none;
+}
+#timerDiv-bg{
+    width: 40px;
+    position: absolute;
+    padding: 20px;
+    top: 5px;
+    font-style: italic;
+    word-spacing: 10px;
+    background: #344b53;
+    color: white;
+    opacity: 0.8;
+    border-radius: 155px;
+}
+#timerDiv{
+    height: 10px;
+    position: absolute;
+    padding: 18px 10px;
+    top: 0px;
+    font-style: italic;
+    word-spacing: 10px;
+    color: white;
+}
+
+#timerDiv a{
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.timerInfo{
+    padding: 31px 40px;
+    font-size: 70%;
+    height: 10px;
+    position: absolute;
+    top: 0px;
+    font-style: italic;
+    word-spacing: 10px;
+    color: white;
+}
+
+#legends {
+    position: absolute;
+    top: 60px;
+    z-index: 10;
+    right: 5px;
+    display: none;
+}
+#legends .actual {
+    margin: 10px;
+    background-color: #334b54;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #334b54;
+    border-radius: 100px;
+    padding: 5px;
+    text-align: center;
+}
+#legends .planned {
+    margin: 10px;
+    background-color: #D2691E;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #D2691E;
+    border-radius: 100px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow: auto;
+    z-index: 21;
+    margin-top: 50px;
+    display:none;
+}
+
+.timeline a {
+    display: block;
+    top: 55px;
+    right: 6px;
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+}
+
+.timeline a:hover {
+    text-decoration: none;
+}
+
+.timeline a:before {
+    content: "\f00d";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+}
+.timeline ul {
+  background: #0000008c;
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: white;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -470px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent white;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: white;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -320px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent white transparent transparent;
+  }
+}

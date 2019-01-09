@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+	<meta charset="utf-8"/>
+	<title>ISHANYA - The Road Trip</title>
+	<link href="images/ishanya.ico" rel="shortcut icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+	<meta property="og:image" content="pages/ico/152.png">
+	
+  <link rel="apple-touch-icon" href="pages/ico/60.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
+	
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta content="" name="description"/>
+	<meta content="" name="author"/>
+	
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ishanya - The Road Trip">
+  <meta property="og:description" content="Road trip from Pune to North East with AirXylo">
+  <meta property="og:url" content="http://foodandadventure.com/ishanya">
+  <meta property="og:site_name" content="FnA: Ishanya - The Road Trip">
+  <meta property="og:image" content="http://foodandadventure.com/ishanya/images/ishanya_full.png">
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
+  <meta property="og:locale" content="en_US">
+
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	</head>
+  <body>
+  	<iframe width="560" height="315" src="https://www.youtube.com/embed/pj-UNrb7APU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript">
+var ids = new Array();
+var titles = new Array();
+
+function showGallery(){
+var sel = document.getElementById("Galleries");
+var selectedID = sel.options[sel.selectedIndex].value;
+$(".largeImageWrap").each(function(i){
+$(this).remove()
+});
+$(".sliderGallery_Wrap").each(function(i){
+$(this).remove()
+});
+$('#flickrTest').flickrGallery({
+galleryHeight : 'auto',
+useFlickr: 'true',
+useFlickrLargeSize: 'true',
+useHoverIntent: 'true',
+flickrAPIKey: '32f4412fa0b2d95dc39c688cc0ba0c52',
+photosetID: selectedID,
+useLightBox: 'true',
+per_page: 50
+});
+}
+$().ready(function(){
+$.getJSON("https://api.flickr.com/services/rest/?&method=flickr.photosets.getList&api_key=32f4412fa0b2d95dc39c688cc0ba0c52&user_id=9129508@N05&format=json&jsoncallback=?",
+function(data){
+var photosetID = "";
+var title = "";
+$.each(data.photosets.photoset, function(i,set){
+photosetID = set.id;
+title = set.title._content;
+ids.push(photosetID);
+titles.push(title);
+});
+for(i=0; i<ids.length;i++){
+var option = new Option(titles[i],ids[i]);
+var dropDown = document.getElementById("Galleries");
+dropDown.options[i] = option;
+}
+
+$('#flickrTest').flickrGallery({
+galleryHeight : 'auto',
+useFlickr: 'true',
+useFlickrLargeSize: 'true',
+useHoverIntent: 'true',
+flickrAPIKey: '32f4412fa0b2d95dc39c688cc0ba0c52',
+photosetID: ids[0],
+useLightBox: 'true',
+per_page: 50
+});
+});
+});
+</script>
+<label>Please select a Gallery from the drop-down menu to view.</label>
+ <form action="" method="get" name="choose_gallery" id="choose_gallery">
+<select name="Galleries" id="Galleries" onchange="showGallery();"></select>
+</form>
+<div id="flickrTest"></div>
+</body>
+</html>
