@@ -206,6 +206,7 @@ section {
     width: 100%;
     top: 50px;
     display: block;
+    overflow: auto;
 }
 
 section .bg-transparent	{
