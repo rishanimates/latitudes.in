@@ -132,6 +132,12 @@ header {
     background-repeat: no-repeat;
 }
 
+.latitudes {
+  background: #334b54 url(/images/latitudes_wide.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 /*** Footer ***/
 footer {
 	width: 100%;

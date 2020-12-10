@@ -44,53 +44,54 @@ $(function (){
               id:"ishanya",
               title:"Ishanya<span>The Road Trip</span>",
               desc:"<p>It all started in the year 2016, when Rhushi came up with a plan for Road Trip to North East. As soon as the plan was published, three more computer geeks decided to ditch their cubicles and be part of this astonishing journey!  A much awaited break from 9 to 6 job is what we were looking for. </p><p>Finally the time has arrived to experience the beauty of snow-clad mountains, the evergreen pine trees and the never ending roads crawling through the valleys. </p><p>Come experience the adventure of four different personalities with one dream – Ishanya – The Road Trip!</p>",
-              name:"<p>Food and Adventure</p>",
-              link:"https://twitter.com/fnaevents",
-linkLabel:"FnA Events"
+              name:"<p>Latitudes</p>",
+              link:"https://twitter.com/latitudess",
+              linkLabel:"Latitudes"
             }, {
               id:"rp",
               title:"Rhushi<span>A hardcore traveller with a beast (Xylo)!</span>",
               desc:"<p>It has been six years since I bought my first car – Xylo (Popularly known as Air Xylo). Since then, flight has never been an option for me. </p><p>I have driven from Kashmir to Kanyakumari. I have even travelled to some isolated places in India where no driver would dare to go. Driving and Travelling is not just a passion for me, it is more than that. </p><p>Wandering to North East was always on my mind. Can’t wait to step on the peddle as Ishanya' is not just any other road trip, but it is going to be a life changing experience!</p>",
-              image:"http://foodandadventure.com/ishanya/images/ishanya_full.png",
+              image:"images/ishanya_full.png",
               name:"<p>Rhushiraj Patil</p>",
               link:"https://twitter.com/rishanimates"
             }, {
               id:"vg",
               title:"Vaibhav<span>“Ha Dilli se hu…. BC!”</span>",
               desc:"<p>I have always been a carefree brat since my childhood. The inquisitiveness inside me has made me more fascinated about Indian history and various cultures across India. “How” and “Why” are the two questions that keep popping into my mind whenever I see a historical marvel. </p><p>I travel to understand the history, culture, language and traditions behind any place. </p><p>Ishanya, is a no less than a goldmine for me. Eagerly waiting to fill my knowledge chest with an unforgettable experience!</p>",
-              image:"http://foodandadventure.com/ishanya/images/ishanya_full.png",
+              image:"images/ishanya_full.png",
               name:"<p>Vaibhav Goyal</p>",
               link:"https://twitter.com/rishanimates"
             }, {
               id:"ap",
               title:"Amol<span>An Indian with a dream</span>",
               desc:"<p>In 2009 my first big exploration started in one of the world’s busiest city - London. Experiencing the British culture and watching the marvellous landscapes and architectures built by them fascinated me to travel more around the world. Since then, there is no stopping. </p><p>I have explored more than 7 countries and almost all of India! The journey of self exploration is never ending for me.</p><p>Ishanya – Is not just any other dream. It is a memory in making with friends, foods, cultures and traditions. Time has come to explore the most unexplored!</p>",
-              image:"http://foodandadventure.com/ishanya/images/ishanya_full.png",
+              image:"images/ishanya_full.png",
               name:"<p>Amol Patil</p>",
-              link:"https://twitter.com/rishanimates"
+              link:"http://latitudes.in",
+              linkLabel:"@amolpatil"
             }, {
               id:"nh",
               title:"Nikhil<span>A food hogger</span>",
               desc:"<p>I travel for food. My love for food has taken me places.</p><p>It may be a small joint across the street to the famous chicken satay in the streets of Pattaya! Any damn thing that is edible has to go through my taste buds.</p><p>Ishanya for me is a food paradise. I can’t wait to experience the food from the east</p>",
-              image:"http://foodandadventure.com/ishanya/images/ishanya_full.png",
+              image:"images/ishanya_full.png",
               name:"<p>Nikhil Hundare</p>",
-              link:"http://neverendingtrail.com/",
-linkLabel:"neverendingtrail"
+              link:"http://latitudes.in/",
+              linkLabel:"@hundare"
         },{  
               id:"fb",
-              desc:'<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffoodandadventures&tabs=timeline&width=' + (secEl.clientWidth - 20) + '&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1738191343150054" width="' + (secEl.clientWidth - 20) + '" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>',
+              desc:'<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flatitudess%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1991721854470899" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
               title:"",
               image:"",
               name:"",
               link:""
         },{
-		id:"wa",
-              title:"FnA<span>Food and Adventure</span>",
-desc:"<p>Wanderlust, Foodie, daring and more than just adventure, thrill, the Unexplored and a tinch of stimulation with the full enthrall of eternal Masti(fun). If these words resonate with you, you are in the right gang. We are the proud group of people who love to explore the uncharted expanse of nature, eat and drink at places known and also not known but equally awesome and most importantly the courage and determination to go till the last mile and get that deep and hard to explain satisfaction. And yes, we have jobs :P</p><p>We have been on some of the toughest treks in Maharashtra and the most endearing trips in India. We have done multiple road trips from the northernmost state of India, Kargil in Kashmir, to Kanyakumari in the south. We have been to Leh and Ladakh and it sure wasn’t a chopper carrying us. We have traversed through the lands of enormous beauty and experienced the rich culture of North-east India, Bhutan and Nepal on a 9000+ km road trip and sipped the coffee made by the Italian couple living near the living root bridges in the forests of Meghalaya.</p><p>But as mesmerising as India is, we haven’t stopped here. We have been on the smoothest of rides in the land of Midnight Sun in the islands of Norway and have seen the blend of 3 most beautiful waterfalls in the US. We boast of travelling in 3 different continents and have driven more than 200,000 km globally.</p><p>And the story still doesn’t end. We plan to embark upon the most daring of our adventures yet, a road trip from India to London traversing through continents and cultures, mountains and deserts, calm and serene countryside to the most dangerous places on Earth, exploring the unexplored.</p><p>This club is as exclusive as easy to get in. You find new friends, expand your network even in the corporate world, get to challenge yourself both physically and mentally, feel the nature and take your taste buds on a party. Get in with the qualities you have be it writing, shooting, editing or just the faith in yourself and the guts to take yourself up a notch.</p>",              
-image:"http://foodandadventure.com/ishanya/images/ishanya_full.png",
-              name:"<p>FNA Team <i> whatsapp # - +919403979278</i></p>",
+		          id:"wa",
+              title:"!latitudes",
+              desc:"<p>Wanderlust, Foodie, daring and more than just adventure, thrill, the Unexplored and a tinch of stimulation with the full enthrall of eternal Masti(fun). If these words resonate with you, you are in the right gang. We are the proud group of people who love to explore the uncharted expanse of nature, eat and drink at places known and also not known but equally awesome and most importantly the courage and determination to go till the last mile and get that deep and hard to explain satisfaction. And yes, we have jobs :P</p><p>We have been on some of the toughest treks in Maharashtra and the most endearing trips in India. We have done multiple road trips from the northernmost state of India, Kargil in Kashmir, to Kanyakumari in the south. We have been to Leh and Ladakh and it sure wasn’t a chopper carrying us. We have traversed through the lands of enormous beauty and experienced the rich culture of North-east India, Bhutan and Nepal on a 9000+ km road trip and sipped the coffee made by the Italian couple living near the living root bridges in the forests of Meghalaya.</p><p>But as mesmerising as India is, we haven’t stopped here. We have been on the smoothest of rides in the land of Midnight Sun in the islands of Norway and have seen the blend of 3 most beautiful waterfalls in the US. We boast of travelling in 3 different continents and have driven more than 200,000 km globally.</p><p>And the story still doesn’t end. We plan to embark upon the most daring of our adventures yet, a road trip from India to London traversing through continents and cultures, mountains and deserts, calm and serene countryside to the most dangerous places on Earth, exploring the unexplored.</p><p>This club is as exclusive as easy to get in. You find new friends, expand your network even in the corporate world, get to challenge yourself both physically and mentally, feel the nature and take your taste buds on a party. Get in with the qualities you have be it writing, shooting, editing or just the faith in yourself and the guts to take yourself up a notch.</p>",
+              image:"images/ishanya_full.png",
+              name:"<p>Team ISHANYA<i> whatsapp # - +919403979278</i></p>",
               link:"https://chat.whatsapp.com/1bdXcajnxaQ8nXY3nZYvHM",
-linkLabel:"FnA Group"
+              linkLabel:"LATITUDES Group"
 }];
         for(var i=0; i<tripData.length; i++){
           var introObj = tripData[i];
@@ -215,11 +216,14 @@ linkLabel:"FnA Group"
 
       function locationHashChanged() {
         switch (location.hash){
-          case "#fb":
-              window.viewProfile("fb");
+          case "#latitudes":
+              window.location.href = "../";
               break;
           case "#ishanya":
               window.viewProfile("ishanya");
+              break;
+          case "#fb":
+              window.viewProfile("fb");
               break;
           case "#rp":
               window.viewProfile("rp");
