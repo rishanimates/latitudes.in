@@ -197,7 +197,7 @@ footer {
 /*** section ***/
 section {
 	position: fixed;
-    z-index: 11;
+    z-index: 0;
     padding: 0px;
     margin: 0px;
     bottom: 0px;
@@ -617,3 +617,12 @@ time {
 }
 
 
+.atlwdg-trigger {
+  top: 11px;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  left: 335px;
+  box-shadow: none;
+  border-radius: 3px;
+}

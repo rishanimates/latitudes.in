@@ -304,34 +304,39 @@ p {
 }
 
 #siteIntro{
-    z-index: 12;
-    background: white;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    overflow: hidden;
+  z-index: 12;
+  background: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
 }
 
 #siteIntro a {
-    display: block;
-    position: absolute;
-    top: 55px;
-    z-index: 200;
-    right: 5px;
-    text-decoration: none;
-    text-align: center;
+  display: block;
+  position: absolute;
+  top: 60%;
+  z-index: 200;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+cursor: pointer;
 }
 
 #siteIntro a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #siteIntro a:before {
-    content: "\f00d";
-    font: normal normal normal 14px/1 FontAwesome;
-    color: #344b53;
-    font-size: 16px;
-    text-align: center;
+  content: "SKIP INTRO";
+  color: #1d1d1d;
+  line-height: 50px;
+  text-align: center;
+  font-size: 13px;
+  background: #ccc;
+  padding: 5px 10px;
+  border-radius: 100px;
+  font-weight: 700;
 }
 
 #intro-text{
@@ -607,5 +612,14 @@ time {
     width: 100%;
     }
 }
-
-
+.atlwdg-trigger {
+  z-index: 15;
+  position: absolute !important;
+  top: 60px !important;
+  height: fit-content !important;
+  right: 10px !important;
+  width: fit-content !important;
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  left: auto !important;
+}

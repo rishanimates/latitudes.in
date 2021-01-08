@@ -625,4 +625,14 @@ time {
     }
 }
 
-
+.atlwdg-trigger {
+  z-index: 15;
+  position: absolute !important;
+  top: 60px !important;
+  height: fit-content !important;
+  right: 10px !important;
+  width: fit-content !important;
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  left: auto !important;
+}
